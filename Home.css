@@ -5,6 +5,21 @@ html, body{
     width: 100%;
     font-family: 'Poppins', sans-serif;
     color: #222;
+    background-color: rgb(255, 235, 218);
+    scroll-behavior: smooth;
+}
+
+#about, #services{
+    padding-top: 50px;
+}
+
+#bg{
+    width: 100%;
+    height: 50%;
+}
+
+#titlecardpic{
+    width: 60%;
 }
 
 .navbar{
@@ -19,19 +34,9 @@ html, body{
     font-size: 1.1em !important;
 }
 
-.caroursel-inner img {
-    width: 50%;
-    height: 100%;
+.padding{
+    padding-bottom: 50px;
 }
-
-#spacing{
-    margin-top: 50px;
-}
-
-#serviceTwo{
-    padding-top: 100px;
-}
-
 
 /* Media Queries
 @media (max-width: 992px){
