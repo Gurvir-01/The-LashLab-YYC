@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>LashLift YYC</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 
     <link rel="stylesheet" href="./Home.css">
@@ -18,11 +26,13 @@
     <!--font awesome link-->
     <script src="https://kit.fontawesome.com/f4c8fcaec2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./Pictures/The Lash Lab[4007].png" width="75">  The LashLab YYC</a>
+            <a class="navbar-brand" href="#"><img src="./Pictures/The Lash Lab[4007].png" width="75"> The LashLab
+                YYC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,85 +47,104 @@
                     <li>
                         <a class="nav-link" href="#">Contact us</a>
                     </li>
-                    <li>
-                        <a class="nav-link" href="#">Book with us </a>
-                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    <!--img slider-->
-    <div id="slides top" class="carousel slide" data-ride="carousel">
+    <!--  img slider/carousel  -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+
         <ul class="carousel-indicators">
             <li data-target="#slides" data-slide-to="0" class="active"></li>
             <li data-target="#slides" data-slide-to="1"></li>
             <li data-target="#slides" data-slide-to="2"></li>
-           
         </ul>
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img id="bg" class="rounded mx-auto d-block" src="./Pictures/bg v2.jpg">
                 <div class="carousel-caption">
                     <h1 class="display-2">The LashLab YYC</h1>
                     <h3>Complete website layout</h3>
-                    <button type="button" class="btn btn-primary btn-lg">Book Here!</button>
+                    <button type="button" id="bookButton" class="btn bg-info btn-lg"><a
+                            href="https://the-lash-lab-yyc.square.site/">Book Here!</a></button>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <img src="./Pictures/lesspixel.png">
             </div>
+
             <div class="carousel-item">
                 <img src="./Pictures/slide3.jpg">
             </div>
+
         </div>
     </div>
 
-    <!--Welcome section-->
 
+    <!--Welcome section-->
     <div class="container-fluid ">
         <div class="row welcome text-center">
+
             <div id="about" class="col-sm-12 col-md-12 col-lg-12">
                 <h1 class="display-5">A Little Bit About Us...</h1>
             </div>
+
             <hr class="my-4">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <p class="lead">The Lash Lab is a lash lift and tint provider in NW Calgary. Using Health Canada registered products to get the ultimate lift for your lashes!</p>
-                <p class="lead">Our process uses a two-in-one tint and lift system, cutting appointment times down by 70%. Our lifts can last up to 8 weeks with customizable results.</p>
-                <p class="lead">The Lash Lab is excited to be hitting the Calgary beauty industry with a revolutionalized instant lash lift system.</p>
+            <div id="explanation" class="col-sm-12 col-md-12 col-lg-12">
+                <p class="lead">The Lash Lab is a lash lift and tint provider in NW Calgary. Using Health Canada
+                    registered products to get the ultimate lift for your lashes!</p>
+                <p class="lead">Our process uses a two-in-one tint and lift system, cutting appointment times down by
+                    70%. Our lifts can last up to 8 weeks with customizable results.</p>
+                <p class="lead">The Lash Lab is excited to be hitting the Calgary beauty industry with a
+                    revolutionalized instant lash lift system.</p>
             </div>
+
         </div>
     </div>
+
     <hr class="my-4">
+
+
     <!--3 collumn section-->
     <div id="services" class="container-fluid padding">
         <div id="services" class="row text-center padding">
+
             <div class="col-12">
                 <h1 class="display-5">Our Services & Rates:</h1>
             </div>
+
             <div class="col-xs-12 col-sm-6 col-md-4" id="spacing">
                 <i class="fab fa-affiliatetheme"> ~ *insert price*</i>
                 <h3>Keratin Lash Lift and Tint w/ 24k Gold and Keratin Lash Serum </h3>
             </div>
+
             <div class="col-xs-12 col-sm-6 col-md-4" id="spacing">
                 <i class="fab fa-affiliatetheme"> ~ *insert price*</i>
                 <h3>Keratin Lash Lift w/ 24k Gold and Keratin Lash Serum </h3>
             </div>
+
             <div class="col-xs-12 col-md-4" id="spacing">
                 <i class="fab fa-affiliatetheme"> ~ *insert price*</i>
                 <h3>Lash Lift and Tint w/ hydration serum</h3>
             </div>
             <br>
+
         </div>
     </div>
+
     <div class="container-fluid ">
         <div class="row text-center ">
+
             <div class="col-xs-12 col-sm-1 col-md-1"></div>
             <div class="col-xs-12 col-sm-6 col-md-5">
                 <i class="fab fa-affiliatetheme"> ~ *insert price*</i>
                 <h3>Lash Lift w/ hydration serum</h3>
             </div>
+
             <div class="col-xs-12 col-sm-6 col-md-5">
                 <i class="fab fa-affiliatetheme"> ~ *insert price*</i>
                 <h3>Lash Tint</h3>
@@ -123,78 +152,92 @@
             <div class="col-xs-12 col-sm-1 col-md-1"></div>
         </div>
     </div>
+
     <div class="container-fluid padding">
         <div class="row text-center padding">
-            
+
         </div>
         <hr class="my-4">
     </div>
 
-   <!-- meet the team -->
-   <div class="container-fluid padding">
-       <div class="row welcome text-center">
+
+    <!-- meet the team -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
             <div class="col-12">
                 <h1 class="display-5">Meet The Founder of TheLashLabYYC</h1>
             </div>
             <hr>
-       </div>
-   </div>
+        </div>
+    </div>
 
-   <!-- card for jeevan  -->
-   <div class="container-fluid padding">
-       <div class="row padding">
-            <div class="row card col-lg-6 col-md-6 col-sm-12">
-               <img id="titlecardpic" class="rounded mx-auto d-block card-imd-top" src="./possible pics/titlecard.jpg">
-               <div class="card-body col-lg-6">       
-                   <h3>Jeevanjot Khosa</h3>            
+
+    <!-- titlecard -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+
+            <div class="col-2"></div>
+
+            <div class="row card col-8">
+                <img id="titlecardpic" class="rounded mx-auto d-block card-imd-top" src="./possible pics/titlecard.jpg">
+                <div class="card-body">
+                    <h3>Jeevanjot Khosa</h3>
                     <p class="card-text text-center col-lg-12">
-                       Jeevan is an entrepreneur who has two degrees in business and human resources. One of her biggest passions is to provide the opportunity for individuals to look and feel good. She is the founder of The LashLab YYC and is commited to providing the best services for her customers within a friendly and sterile environment.
-                   </p>
-               </div>
-           </div>
-       </div>
-   </div>
+                        Jeevan is an entrepreneur who has two degrees in business and human resources. One of her
+                        biggest passions is to provide the opportunity for individuals to look and feel good. She is the
+                        founder of The LashLab YYC and is commited to providing the best services for her customers
+                        within a friendly and sterile environment.
+                    </p>
+                </div>
+            </div>
 
-   <!--connect section-->
-   <div class="container-fluid ">
-       <div class="row text-center ">
-           
-       </div>
-   </div>
+            <div class="col-2"></div>
+        </div>
+    </div>
 
-   <!--footer-->
-   <footer>
-       <div class="container-fluid padding">
-           <div class="row text-center">
-               <div class="col-md-4">
-                    <hr class="light">
-                   <h3>Our Information</h3>
-                   <hr class="light">
-                   <p>403-671-8215</p>
-                   <p>thelashlabyyc@gmail.com </p>
-                   <p>Calgary, AB</p>
-               </div>
-               <div class="col-md-4">
+
+    <!--footer-->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+
+                <div class="col-md-4">
+                    <hr class="dark">
+                    <h3>Our Information</h3>
+                    <hr class="secondary">
+                    <p>403-671-8215</p>
+                    <p>thelashlabyyc@gmail.com </p>
+                    <p>Calgary, AB</p>
+                </div>
+
+                <div class="col-md-4">
                     <hr class="light">
                     <h2>Connect</h2>
                     <hr class="light">
-                    <h1><a href="https://www.instagram.com/thelashlab_yyc/"><i class="fab fa-instagram"></i></a> <a href="thelashlabyyc@gmail.com "><i class="fab fa-google-plus-g"></i></a></h1>
-                    <h1>  </h1>
-               </div>
-                    
-                <div class="col-md-4">
-                   <hr class="light">
-                   <h3>Book Here!</h3>
-                   <hr class="light">
-                   <p>*insert booking link</p>
-               </div>
-               <div class="col-12">
-                   <hr class="light">
-                   <h5><a href="#top">&copy; TheLashLabYYC.com</a></h5>
-               </div>
-           </div>
-       </div>
-   </footer>
+                    <h2>
+                        <a href="https://www.instagram.com/thelashlab_yyc/" target="_blank"><i
+                                class="fab fa-instagram"></i></a> <a href="thelashlabyyc@gmail.com "><i
+                                class="fab fa-google-plus-g"></i></a>
+                    </h2>
+                </div>
 
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h3>Book Here!</h3>
+                    <hr class="light">
+                    <p>*insert booking link</p>
+                </div>
+
+                <div class="col-12">
+                    <hr class="light">
+                    <h5><a href="#top">&copy; TheLashLabYYC.com</a></h5>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
 </body>
+
 </html>
