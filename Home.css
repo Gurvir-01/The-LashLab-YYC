@@ -16,7 +16,8 @@ hr{
 }
 
 .paint{
-    background-image: url(/Pictures/paint.png);
+    background-image: url(./Pictures/brush.png);  
+    width: ;
 }
 
 a{
@@ -25,7 +26,7 @@ a{
 
 #about{
     padding-top: 50px;
-    
+    padding-bottom: 50px;
 }
 
 #explanation{
