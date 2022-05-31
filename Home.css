@@ -9,6 +9,16 @@ html, body{
     scroll-behavior: smooth;
 }
 
+hr{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.paint{
+    background-image: url(/Pictures/paint.png);
+}
+
 a{
     color: white;
 }
@@ -31,7 +41,7 @@ a{
     background-color: transparent;
     width: 500px;
     height: 200px;
-    border: 1px solid #f1f1f1;
+    
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -56,7 +66,7 @@ a{
 }
 
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #fbc4ab;
     color: white;
     transform: rotateY(180deg);
 }
@@ -64,6 +74,14 @@ a{
 .flip-card-front {
     background-color: #fbc4ab;
     color: black;
+}
+
+.flip-card-front{
+    padding-top: 40px;
+}
+
+.fab{
+    padding-bottom: 20px;
 }
 
 
@@ -91,6 +109,7 @@ a{
 .padding{
     padding-bottom: 50px;
 }
+
 
 /* Media Queries
 @media (max-width: 992px){
