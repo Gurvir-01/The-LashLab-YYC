@@ -1,29 +1,35 @@
-/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700'); */
-
 html, body {
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
     color: #222;
-    background-color: #ffdab9;
+    background-color: #ffdab9; /* Light peach background */
     scroll-behavior: smooth;
 }
 
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /* Horizontal rule with gradient */
 }
 
-.paint {
-    background-image: url(./Pictures/brush.png);
-    width: ;
-}
+
+/*----Link Styles----*/
 
 a {
-    color: #dba48a; /* Initial color */
-    text-decoration: none; /* Remove underlines if you don't want them */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #fbc4ab; /* Peach link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #f08080; /* Darker peach on hover */
+}
+
+/*----Section Padding----*/
+
+#about, #explanation, #services {
+    padding: 20px;
 }
 
 #about {
@@ -35,18 +41,17 @@ a {
     padding-bottom: 30px;
 }
 
-#services {
-    padding: 20px;
+.padding {
+    padding-bottom: 50px;
 }
 
-/* service card flipping when mouse hovers */
+/*----Flip Card Styles (Services)----*/
+
 .flip-card {
     background-color: transparent;
     width: 500px;
-    height: 200px;
-
+    height: 250px;
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
 }
 
 .flip-card-inner {
@@ -70,26 +75,35 @@ a {
 }
 
 .flip-card-back {
-    background-color: #fbc4ab;
+    background-color: #fbc4ab; /* Peach background for back */
     color: black;
     transform: rotateY(180deg);
     display: flex;
-    /* Use flexbox */
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    overflow: auto;
-    /* Optionally add this to center text content also */
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0.9em; /* Smaller font size */
+}
 
+.flip-card-back h3 {
+    font-size: 1.4em;
+}
+
+.flip-card-back > * {
+    margin-top: 0;
+}
+
+.flip-card-back > *:first-child {
+    margin-top: 5px;
 }
 
 .flip-card-front {
     background-color: #fbc4ab;
     color: black;
-}
-
-.flip-card-front {
     padding-top: 40px;
 }
 
@@ -97,6 +111,8 @@ a {
     padding-bottom: 80px;
 }
 
+
+/*----Image Styles----*/
 
 #bg {
     width: 100%;
@@ -107,12 +123,20 @@ a {
     width: 50%;
 }
 
+/*----Card Styles----*/
+
 .card {
     background-color: #ffdab9;
 }
 
+.card-body {
+    text-align: center;
+}
+
+/*----Navbar Styles----*/
+
 .navbar {
-    padding: .8rem;
+    padding: 0.8rem;
 }
 
 .collapse {
@@ -121,12 +145,10 @@ a {
 
 .nav-link {
     font-size: 1.1em !important;
+    color: #fbc4ab;
 }
 
-.padding {
-    padding-bottom: 50px;
-}
-
+/*----Collapsible Styles (FAQ)----*/
 
 .collapsible {
     background-color: #777;
@@ -140,10 +162,6 @@ a {
     font-size: 15px;
 }
 
-.active:after {
-    content: "\2212";
-}
-
 .content {
     padding: 0 18px;
     max-height: 0;
@@ -152,41 +170,44 @@ a {
     background-color: #f1f1f1;
 }
 
+/*----FAQ Styles----*/
 
-/* Styling for FAQ collapsible list */
 .faq-question {
     background-color: #fbc4ab;
-    /* Light Coral, or a darker shade of flip-card back */
     color: black;
-    /* White text for contrast */
     cursor: pointer;
     padding: 15px;
     position: relative;
     transition: background-color 0.3s ease;
     border: none;
-    /* Remove default border */
     text-align: left;
-    /* Align text to the left */
     width: 100%;
-    /* Make it full width */
 }
 
-/* Hover effect */
 .faq-question:hover {
     background-color: #e57373;
-    /* Slightly darker coral on hover */
 }
 
-/* Collapsible content */
 .faq-answer {
     padding: 15px;
     background-color: #fff;
-    /* White background for content */
     border: 1px solid #ddd;
-    /* Add a light border to the content area */
+    height: auto;
+    max-height: 1000px;
 }
 
-/* Plus/minus icon */
+.faq-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 55px;
+}
+
+.faq-item.open {
+    max-height: 1000px;
+}
+
 .faq-question::after {
     content: '+';
     position: absolute;
@@ -196,26 +217,11 @@ a {
     font-size: 1.2em;
     transition: transform 0.3s ease;
     color: white;
-    /* Plus/minus icon color */
 }
 
-/* Minus icon when open */
 .faq-item.open .faq-question::after {
     content: '-';
     transform: translateY(-50%) rotate(45deg);
-}
-
-/*FAQ items*/
-.faq-item {
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-    max-height: 50px;
-}
-
-.faq-item.open {
-    max-height: 500px;
 }
 
 .faq-container {
@@ -224,28 +230,60 @@ a {
     margin: 50px auto;
 }
 
-
-/* Meet the founder centering  */
-
-.card-body {
-    text-align: center;
-}
-
+/*----Footer Styles----*/
 #footer-connect {
     text-align: center;
 }
 
-/* Media Queries
-@media (max-width: 992px){
 
+    
+
+/*----Media Queries (Responsive)----*/
+@media (max-width: 768px) {
+    .col-md-4 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .col-md-4 h2 {
+        font-size: 1.5em;
+    }
+
+    .col-md-4 a i {
+        font-size: 2em;
+    }
+
+    .faq-answer {
+        padding: 10px;
+    }
 }
 
-@media (max-width: 768){
+@media (max-width: 576px) {
+    .col-md-4 {
+        padding: 10px;
+    }
 
+    .col-md-4 h2 {
+        font-size: 1.2em;
+    }
+
+    .col-md-4 a i {
+        font-size: 1.5em;
+    }
+
+    #slides img {
+        max-height: 60vh;
+    }
+
+    .flip-card {
+        width: 100%;
+    }
+
+    .faq-container {
+        width: 100%;
+    }
+
+    .faq-answer {
+        padding: 5px;
+    }
 }
-
-@media (max-width: 576){
-
-} */
-
-/*F*/
